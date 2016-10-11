@@ -5,6 +5,7 @@ function _ubuntu_config_profile {
 
   export PKG_HOME="$HOME"
   export SVDIR="$HOME/service"
+  export BLOCK_PATH="$HOME/work"
 }
 
 _ubuntu_config_profile
