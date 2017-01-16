@@ -7,6 +7,7 @@ function _ubuntu_config_profile {
   export SVDIR="$HOME/service"
   export BLOCK_PATH="$HOME/work"
   export NODE_VERSION="6.9.2"
+  export BASEBOX_CACHE="/data"
 }
 
 _ubuntu_config_profile
