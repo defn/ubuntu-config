@@ -3,9 +3,9 @@
 function _ubuntu_config_profile {
   local shome="${_ubuntu_config_home:-"$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"}"
 
-  export PKG_HOME="$HOME"
+  export PKG_HOME="${BOARD_PATH:-$HOME}"
   export SVDIR="$HOME/service"
-  export BLOCK_PATH="$HOME/work"
+  export BLOCK_PATH="${BOARD_PATH:-$HOME}/work"
   export BASEBOX_CACHE="/data/cache"
 }
 
