@@ -6,6 +6,7 @@ function _ubuntu_config_profile {
   export PKG_HOME="${BOARD_PATH:-$HOME}"
   export SVDIR="$HOME/service"
   export BLOCK_PATH="${BOARD_PATH:-$HOME}/work"
+  export BASEBOX_CACHE="/data/cache"
 }
 
 _ubuntu_config_profile
