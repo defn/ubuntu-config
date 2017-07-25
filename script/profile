@@ -3,10 +3,12 @@
 function _ubuntu_config_profile {
   local shome="${_ubuntu_config_home:="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"}"
 
+  export DATA="${DATA:-/data}"
+  export CONFIG="${CONFIG:-/config}"
   export PKG_HOME="${BOARD_PATH}"
   export SVDIR="${BOARD_PATH}/service"
   export BLOCK_PATH="${BOARD_PATH}/work"
-  export BASEBOX_CACHE="${BASEBOX_CACHE:-/data/cache}"
+  export BASEBOX_CACHE="${DATA}/cache}"
 }
 
 _ubuntu_config_profile
