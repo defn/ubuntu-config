@@ -2,5 +2,13 @@
   "require": [
     "block",
     "base"
-  ]
+  ],
+  "run": {
+    "openresty": {
+      "args": [ "one two", "three fou r!"],
+      "env": {
+        "MEH": "This is 'defn' !"
+      }
+    }
+  }
 }
