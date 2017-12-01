@@ -4,11 +4,17 @@
     "base"
   ],
   "run": {
+    "gotty": {
+      "args": [ "-p", "31337", "--tls", "--address", "127.0.0.1", "htop" ]
+    },
+    "netdata": {
+    },
+    "tugboat": {
+    },
+    "jenkins": {
+    },
     "openresty": {
-      "args": [ "one two", "three fou r!"],
-      "env": {
-        "MEH": "This is 'defn' !"
-      }
+      "args": [ "-c", "~/etc/nginx.conf", :"-p", "$HOME" ]
     }
   }
 }
