@@ -4,8 +4,7 @@ function _ubuntu_config_profile {
   local shome="${_ubuntu_config_home:="$(cd -P -- "${BASH_SOURCE%/*}/.." && pwd -P)"}"
 
   export BOARD_PATH="${BOARD_PATH:-"${HOME}"}"
-  export DATA="${DATA:-/data}"
-  export CONFIG="${CONFIG:-/config}"
+  export DATA="${DATA:-"${BOARD_PATH}/data"}"
   export PKG_HOME="${BOARD_PATH}"
   export SVDIR="${BOARD_PATH}/service"
   export BLOCK_PATH="${BOARD_PATH}/work"
