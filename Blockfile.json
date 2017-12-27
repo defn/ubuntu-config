@@ -5,24 +5,37 @@
   ],
   "run": {
     "gotty": {
-      "args": [ "-p", "31337", "--tls", "--address", "127.0.0.1", "htop" ],
-      "env": {}
-    },
-    "netdata": {
-      "args": [],
-      "env": {}
-    },
-    "tugboat": {
-      "args": [],
+      "args": [
+        "-p",
+        "31337",
+        "--tls",
+        "--address",
+        "127.0.0.1",
+        "htop"
+      ],
       "env": {}
     },
     "jenkins": {
       "args": [],
       "env": {}
     },
+    "netdata": {
+      "args": [],
+      "env": {}
+    },
     "openresty": {
-      "args": [ "-c", "~/etc/nginx.conf", "-p", "$HOME" ],
+      "args": [
+        "-c",
+        "~/etc/nginx.conf",
+        "-p",
+        "$HOME"
+      ],
+      "env": {}
+    },
+    "tugboat": {
+      "args": [],
       "env": {}
     }
-  }
+  },
+  "versions": {}
 }
