@@ -18,6 +18,7 @@ function _ubuntu_config_profile {
   export SVDIR="${BOARD_PATH}/service"
   export BLOCK_PATH="${BOARD_PATH}/work"
   export BASEBOX_CACHE="${DATA}/cache"
+  export NOSUDO="${NOSUDO:-}"
 
   if [[ ! -f "${DATA}/.slow_as_shit" ]]; then
     export XDG_CACHE_HOME="${DATA}/cache"
