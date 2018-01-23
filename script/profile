@@ -20,9 +20,7 @@ function _ubuntu_config_profile {
   export BASEBOX_CACHE="${DATA}/cache"
   export NOSUDO="${NOSUDO:-}"
 
-  if [[ ! -f "${DATA}/.slow_as_shit" ]]; then
-    export XDG_CACHE_HOME="${DATA}/cache"
-  fi
+  export XDG_CACHE_HOME="${DATA}/cache"
 }
 
 _ubuntu_config_profile
