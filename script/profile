@@ -21,6 +21,8 @@ function _ubuntu_config_profile {
   export NOSUDO="${NOSUDO:-}"
 
   export XDG_CACHE_HOME="${DATA}/cache"
+
+  export EDITOR=vim
 }
 
 _ubuntu_config_profile
