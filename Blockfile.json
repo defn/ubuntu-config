@@ -1,8 +1,7 @@
 {
   "require": [
     "site",
-    "block",
-    "base"
+    "block"
   ],
   "run": {
     "gotty": {
