@@ -59,7 +59,9 @@ function _ubuntu_config_profile {
   export BASEBOX_CACHE="${DATA}/cache"
   export NOSUDO="${NOSUDO:-}"
 
-  export XDG_CACHE_HOME="${DATA}/cache"
+  if ! df "${DATA}" | grep efs >/dev/null; then
+    export XDG_CACHE_HOME="${DATA}/cache"
+  fi
 
   export EDITOR=vim
 }
