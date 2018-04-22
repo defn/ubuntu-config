@@ -61,6 +61,8 @@ function _ubuntu_config_profile {
 
   if ! df "${DATA}" | grep efs >/dev/null; then
     export XDG_CACHE_HOME="${DATA}/cache"
+  else
+    unset XDG_CACHE_HOME
   fi
 
   export EDITOR=vim
