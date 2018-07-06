@@ -66,6 +66,8 @@ function _ubuntu_config_profile {
   fi
 
   export EDITOR=vim
+  
+  export CHECKPOINT_DISABLE=1
 }
 
 _ubuntu_config_profile
